@@ -20,7 +20,8 @@ if bit == "64bit":
     # load AutoItX3_x64.dll
     dll = "AutoItX3_x64.dll"
 
-dll_path = os.path.join(os.path.dirname(__file__), "lib", dll)
+# dll_path = os.path.join(os.path.dirname(__file__), "lib", dll)
+dll_path = os.path.join("C:\\Program Files (x86)\\AutoIt3\\AutoItX", dll)
 
 if not os.path.exists(dll_path):
     raise IOError("Cannot load AutoItX from path: %s" % dll_path)
